@@ -1,13 +1,19 @@
- class Food(GameObject):
-	def __init__(self, score, hp=1, size, color, sprite):
+import pygame
+from GameObject import GameObject
+class Food(GameObject):
+	def __init__(self, pos, score, size, color, atk= 0, hp=1):
+		super(). __init__(pos, size, color) #call father constructor
 		self.score=score
 		self.hp=hp
-    	super(). __init__(posInGrid, size, color, sprite) #call father constructor
+		self.atk=atk
 
-class Enemy(Food):
-	def __init__(self, size, score, color, sprite=None, hp=1):
-		super().__init__(size, score, color, sprite, hp)
+		self.sprite = pygame.Rect(pos.x,pos.y,size.x, size.y)
 
-	def move(target):
-		pass
- 
+	def draw(self, screen):
+		pygame.draw.rect(screen, self.color, self.sprite)
+
+
+
+
+
+	 
