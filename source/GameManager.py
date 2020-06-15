@@ -1,52 +1,40 @@
 # Import and initialize the pygame library
 import pygame
+import pdb
 import random
 import math
 import os
 import sys
-
+from WallE import WallE
 from Snake import Snake
+from Snake import SnakePart
 from Player import Player
 from Food import Food
 from Vector2 import Vector2
-
+from Text import Text
+from Enemy import Enemy
+from Bullet import Bullet
+from GameGlobals import SceneManager
+from Scene import Scene
 
 pygame.init()
 
-pygame.display.set_caption("Snake 2D prototype 1.9.0")
-
-screen = pygame.display.set_mode([700, 700])
+pygame.display.set_caption("Snake Adventures Beta 3.1.0")
+screen = pygame.display.set_mode([720, 720])
+sceneManager = SceneManager(screen)
+sceneManager.initScenes()
+sceneManager.sceneLoad(sceneManager.homeScene)
 screen.fill((0,0,0))
-
-snake = Snake(Vector2(335, 365), Vector2(30, 30), pygame.Color(200, 0, 0))
-player = Player(snake, 0, atk=1, hp=3)
-food = Food(Vector2(245, 456), 1, Vector2(30, 30), pygame.Color(0, 247, 0), hp=1)
-enemy = Food(Vector2(344, 345), 1, Vector2(30, 30), pygame.Color(100, 0, 100), atk=1, hp=1)
-gameObjects = [player, food, enemy]
-
-
-# Run until the user asks to quit
-running = True
+running = True	
 while running:
-	player.handleKeys()
-
-	for gameObject in gameObjects:
-		gameObject.draw(screen)
-
-
-
-
+	screen.fill((0, 0, 0))
+	sceneManager.currScene.update()
+	
     # Did the user click the window close button?
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
-			running = False
+			quit()
 
 	pygame.display.flip()
-
-	player.draw(screen)
-
-
-	
-
-	pygame.time.wait(4)
+	pygame.display.update()
 pygame.quit()
