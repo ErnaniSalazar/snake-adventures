@@ -23,9 +23,13 @@ Good Luck, Snakers!
 
 ## Instalation:
 
-install pygame: https://www.pygame.org/download.shtml (version 1.9.6)
+This game requires the pygame library: https://www.pygame.org/.
 
-go to the Control Panel a type "python GameManager.py"
+To game is executed by the following command:
+
+python 
+python GameManager.py
+
 
 
 ## Contributors:
