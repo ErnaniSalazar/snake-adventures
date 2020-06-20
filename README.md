@@ -27,9 +27,9 @@ This game requires the pygame library: https://www.pygame.org/.
 
 To game is executed by the following command:
 
-'''python
+```python
 python GameManager.py
-'''
+```
 
 
 ## Contributors:
