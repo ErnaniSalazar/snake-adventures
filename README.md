@@ -23,9 +23,9 @@ Good Luck, Snakers!
 
 ## Instalation:
 
-1º: install pygame: https://www.pygame.org/download.shtml (version 1.9.6)
+install pygame: https://www.pygame.org/download.shtml (version 1.9.6)
 
-2º: go to the Control Panel a type "python GameManager.py"
+go to the Control Panel a type "python GameManager.py"
 
 
 ## Contributors:
