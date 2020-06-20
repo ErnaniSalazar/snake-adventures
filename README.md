@@ -21,6 +21,8 @@ The Boss has 10 HP.
 
 Good Luck, Snakers!
 
+To play the game go to the Control Panel a type "python GameManager.py"
+
 
 ## Contributors:
 - Ernâni Salazar - [@ErnaniSalazar](https://github.com/ErnaniSalazar)
