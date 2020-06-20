@@ -2,6 +2,8 @@
 
 Welcome to the Snake Adventures Game Repository. Snake Adventures is a game which mixes the mechanics of a classic snake game, with mechanics of RPGs.
 
+![version](https://img.shields.io/badge/version-2.0.0-red)
+
 This game presents the following simple rules:
   - If the player's HP reaches 0, the player loses;
   - If the player touches the walls, the player loses;
@@ -19,7 +21,6 @@ The Boss has 10 HP.
 
 Good Luck, Snakers!
 
-Current version: Beta 2.0
 
 ## Contributors:
 - Ernâni Salazar - [@ErnaniSalazar](https://github.com/ErnaniSalazar)
